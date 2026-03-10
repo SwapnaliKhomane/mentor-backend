@@ -18,7 +18,7 @@ connectDB();
 app.use(cors());
 app.use(express.json());
 
-app.get("/", (req, res) => res.send("Mentor Backend Running"));
+app.get("/test-api", (req, res) => res.send("Mentor Backend Running"));
 
 app.use("/auth", authRoutes);
 app.use("/students", studentRoutes);
