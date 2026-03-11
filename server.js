@@ -20,6 +20,10 @@ app.use(express.json());
 
 app.get("/test-api", (req, res) => res.send("Mentor Backend Running"));
 
+app.get("/", (req, res) => {
+  res.send("Mentor Backend API Running");
+});
+
 app.use("/auth", authRoutes);
 app.use("/students", studentRoutes);
 app.use("/lessons", lessonRoutes);
